@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div  class = "container">
+
+        <header>
+            <h1> PASSWORD GENERATOR</h1>
+            <button id="themetoggle">🌙</button>
+        </header>
+
+        <section class="password-section"> 
+            <input
+             type="password"
+                id="passwordOutput"
+                placeholder="Your password will appear here"
+                readonly
+                >
+                <button id="showButton">Show</button>
+                <button id="copyButton">Copy</button>
+
+        </section>
+
+        <section class="length-section">
+            <h3>Password Length</h3>
+            <input type="range" id="lengthRange" min="4" max="64" value="16">
+            <input type="number" id = "lengthNumber" min="4" max="64" value="16">       
+           
+         </section>
+       
+         <section class="options-section">
+
+            <h3>Character Options</h3>
+
+            <label>
+                <input type="checkbox" id="uppercase" checked>
+                Uppercase (A-Z)
+            </label>
+
+            <label>
+                <input type="checkbox" id="lowercase" checked>
+                Lowercase (a-z)
+            </label>
+
+            <label>
+                <input type="checkbox" id="numbers" checked>
+                Numbers (0-9)
+            </label>
+
+            <label>
+                <input type="checkbox" id="symbols" checked>
+                Symbols (!@#$%)
+            </label>
+
+        </section>
+
+        <section class="advanced-section">
+            <h3>Additional Options</h3>
+             <label>
+                <input type="checkbox" id="excludeSimilar">
+                Exclude Similar Characters
+            </label>
+             <label>
+                <input type="checkbox" id="excludeAmbiguous">
+                Exclude Ambiguous Symbols
+            </label>
+
+            <section class="strength-section">
+                 <h3>Password Strength</h3>
+                 <p id="strengthText">Not generated</p>
+                
+                </section>
+
+            <section class="buttons">
+                <button id="generateButton">
+                Generate Password
+            </button>
+
+            <button id="resetButton">
+                Reset
+            </button>
+
+        </section>
+
+
+            
+
+
+
+            
+            
+
+           
+
+           
+
+
+
+    </div>
+    
+</body>
+</html>
